@@ -70,12 +70,12 @@ export default class Details extends Component {
                   <Text>Quantidade :</Text>
                 </View>
               </Col>
-              <Col size={3}>
+              <Col>
                 <View style={{flex: 1, flexDirection: 'row'}}>
                   <Button style={{flex: 1}} icon light onPress={() => this.setState({quantity: this.state.quantity>1 ? this.state.quantity-1 : 1})} >
                     <Icon name='ios-remove-outline' />
                   </Button>
-                  <View style={{flex: 4, justifyContent: 'center', alignItems: 'center', paddingLeft: 0, paddingRight: 0}}>
+                  <View style={{flex: 1, justifyContent: 'center', alignItems: 'center', paddingLeft: 0, paddingRight: 0, flexDirection: 'row'}}>
                     <Text style={{fontSize: 18}}>{this.state.quantity}</Text>
                   </View>
                   <Button style={{flex: 1}} icon light onPress={() => this.setState({quantity: this.state.quantity+1})}>
