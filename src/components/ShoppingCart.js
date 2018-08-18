@@ -91,7 +91,7 @@ class ShoppingCart extends Component {
   removeItemPressed(item) {
     Alert.alert(
       'Remover '+item.title,
-      'Tem certeza que quer este item do seu carrinho ?',
+      'Tem certeza que quer retirar este item ?',
       [
         {text: 'Não', onPress: () => console.log('Não pressionado'), style: 'cancelar'},
         {text: 'Sim', onPress: () => this.removeItem(item)},
