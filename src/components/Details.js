@@ -13,10 +13,10 @@ export default class Details extends Component {
     };
   }
 
-	render() {
+  render() {
     const { image, title, size, sugar, additional} = this.props.navigation.state.params;
 
-		return (
+    return (
 
       <Container>
         <Header>
@@ -70,15 +70,15 @@ export default class Details extends Component {
                   <Text>Quantidade :</Text>
                 </View>
               </Col>
-              <Col>
+              <Col >
                 <View style={{flex: 1, flexDirection: 'row'}}>
-                  <Button style={{flex: 1}} icon light onPress={() => this.setState({quantity: this.state.quantity>1 ? this.state.quantity-1 : 1})} >
+                  <Button icon light onPress={() => this.setState({quantity: this.state.quantity>1 ? this.state.quantity-1 : 1})} >
                     <Icon name='ios-remove-outline' />
                   </Button>
-                  <View style={{flex: 1, justifyContent: 'center', alignItems: 'center', paddingLeft: 0, paddingRight: 0, flexDirection: 'row'}}>
+                  <View style={{flex: 4, justifyContent: 'center', alignItems: 'center', paddingLeft: 0, paddingRight: 0}}>
                     <Text style={{fontSize: 18}}>{this.state.quantity}</Text>
                   </View>
-                  <Button style={{flex: 1}} icon light onPress={() => this.setState({quantity: this.state.quantity+1})}>
+                  <Button icon light onPress={() => this.setState({quantity: this.state.quantity+1})}>
                     <Icon name='ios-add' />
                   </Button>
                 </View>
@@ -92,7 +92,7 @@ export default class Details extends Component {
         </Content>
       </Container>
 
-		);
+    );
   }
   
   addToCart() {
