@@ -9,9 +9,12 @@ import { StyleSheet } from 'react-native';
 import Home from '../Home';
 import Details from '../Details';
 import ShoppingCart from '../ShoppingCart';
-
+import Splash from '../../Splash';
 
 export const Root = createStackNavigator({
+    Splash: {
+      screen: Splash,
+    },
     Home: {
       screen: Home,
     },
