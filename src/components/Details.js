@@ -54,7 +54,7 @@ export default class Details extends Component {
             <ListItem>
               <View style={{flex:1, flexDirection:'row'}}>
                 <Text>Açucar</Text>
-                <Image square style={{width:24, height:24, marginLeft:4}}  source={{ uri: sugar }}/>
+                <Image square style={{width:26, height:24, marginLeft:4}}  source={{ uri: sugar }}/>
               </View>
             </ListItem>
             <ListItem>
