@@ -16,7 +16,7 @@ export default class Home extends Component {
       }
 
     componentDidMount(){
-        return fetch('https://api.myjson.com/bins/7g2kc')
+        return fetch('https://api.myjson.com/bins/kzk0w')
           .then((response) => response.json())
           .then((responseJson) => {
     
