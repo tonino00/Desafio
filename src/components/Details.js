@@ -14,7 +14,7 @@ export default class Details extends Component {
   }
 
   render() {
-    const { image, title, size, sugar, additional} = this.props.navigation.state.params;
+    const { image, title, size, sugar, additional,tamanho} = this.props.navigation.state.params;
 
     return (
 
@@ -38,13 +38,13 @@ export default class Details extends Component {
             <ListItem>
               <View style={{flex:1, flexDirection:'column', justifyContent:'space-between'}}>
                 <Text style={styles.title}>{title}</Text>
-                <Text style={styles.subTitle}>200 ML</Text>
+                <Text style={styles.subTitle}>{size}</Text>
               </View>
             </ListItem>
             <ListItem>
               <View style={{flex:1, flexDirection:'row'}}>
                 <Text>Tamanho :</Text>
-                <Text style={{marginLeft:10}}>{size}</Text>
+                <Text style={{marginLeft:10}}>{tamanho}</Text>
               </View>
             </ListItem>
             <ListItem>
