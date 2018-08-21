@@ -20,11 +20,7 @@ export default class Details extends Component {
 
       <Container>
         <Header>
-          <Left style={{flex: 1}}>
-          <Button transparent transparent>
-            <Icon name='arrow-back'  onPress={() => this.props.navigation.navigate('Home')} />
-          </Button>
-          </Left>
+          <Left style={{flex: 1}}/>
           <Body style={styles.body}>
             <Title>Detalhes</Title>
           </Body>
