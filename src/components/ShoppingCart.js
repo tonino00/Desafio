@@ -24,7 +24,7 @@ class ShoppingCart extends Component {
         <Header>
           <Left style={{flex: 1}}>
           <Button transparent transparent>
-            <Icon name='arrow-back'  onPress={() => this.props.navigation.goBack()} />
+            <Icon name='close'  onPress={() => this.props.navigation.navigate('Home')} />
           </Button>
           </Left>
           <Body style={styles.body}>
